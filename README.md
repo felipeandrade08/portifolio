@@ -35,9 +35,9 @@ portfolio/
 Abra o arquivo `index.html` e substitua:
 
 - **Seu nome** (linha ~45): `Felipe Andrade`
-- **GitHub** (linha ~59): `https://github.com/seu-usuario`
-- **LinkedIn** (linha ~66): `https://linkedin.com/in/seu-perfil`
-- **Email** (linha ~73): `seu.email@gmail.com`
+- **GitHub** (linha ~59): `https://github.com/felipeandrade08`
+- **LinkedIn** (linha ~66): `https://linkedin.com/in/felipe-andrade-0331b9205/`
+- **Email** (linha ~73): `felipe.pessoall2026@gmail.com`
 
 ### 2. Seção Hero (Apresentação)
 
