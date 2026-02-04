@@ -32,8 +32,6 @@ portfolio/
 
 ### 1. Informações Pessoais
 
-Abra o arquivo `index.html` e substitua:
-
 - **Seu nome** (linha ~45): `Felipe Andrade`
 - **GitHub** (linha ~59): `https://github.com/felipeandrade08`
 - **LinkedIn** (linha ~66): `https://linkedin.com/in/felipe-andrade-0331b9205/`
