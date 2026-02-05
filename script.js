@@ -135,43 +135,29 @@ document.querySelectorAll('.project-card').forEach(card => {
     });
 });
 
-// Form Submission
-const contactForm = document.getElementById('contactForm');
+// Inicializar EmailJS
+emailjs.init("0jHgcrytirwbHEVON");
 
-contactForm.addEventListener('submit', (e) => {
-    e.preventDefault();
-    
-    // Get form data
-    const formData = new FormData(contactForm);
-    const data = Object.fromEntries(formData);
-    
-    // Here you would normally send the data to a backend
-    // For now, we'll just show an alert
-    alert('Obrigado pela mensagem! Entrarei em contato em breve.');
-    
-    // Reset form
+// Form Submission
+const contactForm = document.getElementById("contactForm");
+
+contactForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  // Enviar email
+  emailjs.sendForm(
+    "service_vsmo5c9",    // Ex: service_abc1234
+    "template_ehmz4dl",   // Ex: template_xyz5678
+    contactForm
+  ).then(() => {
+    alert("Mensagem enviada com sucesso! ✅");
     contactForm.reset();
-    
-    // You can integrate with services like:
-    // - EmailJS (https://www.emailjs.com/)
-    // - Formspree (https://formspree.io/)
-    // - Netlify Forms (if hosting on Netlify)
-    
-    /* Example with EmailJS:
-    emailjs.send('service_id', 'template_id', {
-        from_name: data.name,
-        from_email: data.email,
-        subject: data.subject,
-        message: data.message
-    }).then(() => {
-        alert('Mensagem enviada com sucesso!');
-        contactForm.reset();
-    }).catch((error) => {
-        alert('Erro ao enviar mensagem. Tente novamente.');
-        console.error(error);
-    });
-    */
+  }).catch((error) => {
+    alert("Erro ao enviar. Tente novamente.");
+    console.error(error);
+  });
 });
+
 
 // Add active state to navigation
 const sections = document.querySelectorAll('section');
