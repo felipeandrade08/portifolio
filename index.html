@@ -1,470 +1,92 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Felipe Andrade - Desenvolvedor Full Stack em formação. Portfólio de projetos e habilidades.">
-    <title>Felipe Andrade | Desenvolvedor Full Stack</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Space+Grotesk:wght@300;500;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080d18">
+  <meta name="description" content="Felipe Andrade — desenvolvedor de software. Conheça meus projetos, habilidades e experiências criando soluções digitais.">
+  <meta property="og:title" content="Felipe Andrade | Desenvolvedor de Software">
+  <meta property="og:description" content="Projetos, tecnologia e soluções digitais desenvolvidas por Felipe Andrade.">
+  <meta property="og:type" content="website">
+  <title>Felipe Andrade — Desenvolvedor de Software</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="container">
-            <div class="nav-brand">
-                <span class="logo">&lt;FA/&gt;</span>
-            </div>
-            <ul class="nav-menu">
-                <li><a href="#home" class="nav-link">Início</a></li>
-                <li><a href="#about" class="nav-link">Sobre</a></li>
-                <li><a href="#skills" class="nav-link">Skills</a></li>
-                <li><a href="#projects" class="nav-link">Projetos</a></li>
-                <li><a href="#contact" class="nav-link">Contato</a></li>
-            </ul>
-            <button class="menu-toggle" aria-label="Toggle menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-        </div>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <header class="site-header">
+    <nav class="nav shell" aria-label="Navegação principal">
+      <a class="brand" href="#inicio" aria-label="Felipe Andrade, início"><span class="brand-mark">F<span>.</span>A</span><span class="brand-caption">DEV / PORTFOLIO</span></a>
+      <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false"><span></span><span></span></button>
+      <div class="nav-links">
+        <a href="#sobre">Sobre</a><a href="#stack">Tecnologias</a><a href="#projetos">Projetos</a><a href="#contato">Contato</a>
+        <a class="nav-cta" href="mailto:felipe.pessoall2026@gmail.com">Vamos conversar <span>↗</span></a>
+      </div>
     </nav>
+  </header>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-background">
-            <div class="grid-overlay"></div>
+  <main>
+    <section class="hero shell" id="inicio">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="status-dot"></span> DISPONÍVEL PARA OPORTUNIDADES</div>
+        <p class="hero-kicker">OLÁ, MEU NOME É FELIPE</p>
+        <h1>Transformo ideias em<br><span class="gradient-text">soluções digitais.</span></h1>
+        <p class="hero-description">Sou Felipe Andrade, estudante de Análise e Desenvolvimento de Sistemas e desenvolvedor em constante evolução. Gosto de construir aplicações úteis, interfaces intuitivas e experiências que resolvem problemas reais.</p>
+        <div class="hero-actions"><a class="button button-primary" href="#projetos">Explorar projetos <span>↘</span></a><a class="button button-ghost" href="mailto:felipe.pessoall2026@gmail.com">Entrar em contato <span>↗</span></a></div>
+        <div class="social-row"><a href="https://github.com/felipeandrade08" target="_blank" rel="noreferrer">GitHub ↗</a><a href="https://linkedin.com/in/felipe-andrade-0331b9205/" target="_blank" rel="noreferrer">LinkedIn ↗</a><span class="social-divider"></span><span class="location">São Paulo, Brasil</span></div>
+      </div>
+      <div class="hero-visual" aria-label="Cartão de apresentação de desenvolvedor">
+        <div class="visual-orbit orbit-a"></div><div class="visual-orbit orbit-b"></div>
+        <div class="profile-card">
+          <div class="card-top"><span class="card-label">PROFILE / 001</span><span class="live-indicator">● ONLINE</span></div>
+          <div class="avatar-frame"><img src="foto.png" alt="Foto de Felipe Andrade" onerror="this.style.display='none';this.parentElement.classList.add('avatar-fallback')"><span class="avatar-initials">FA</span></div>
+          <h2>Felipe Andrade</h2><p class="profile-role">Desenvolvedor de Software</p>
+          <div class="card-rule"></div>
+          <div class="profile-meta"><span>FOCO</span><strong>Web · Sistemas · Tecnologia</strong></div>
+          <div class="profile-meta"><span>MENTALIDADE</span><strong>Aprender. Construir. Evoluir.</strong></div>
+          <div class="card-footer"><span>PORTFÓLIO DIGITAL</span><span>2026</span></div>
         </div>
-        <div class="container hero-content">
-            <div class="hero-text">
-                <h1 class="hero-title">
-                    <span class="greeting">Olá, eu sou</span>
-                    <span class="name">Felipe Andrade</span>
-                </h1>
-                <div class="typing-container">
-                    <span class="typing-text"></span>
-                    <span class="cursor">|</span>
-                </div>
-                <p class="hero-description">
-                    Estudante de Análise e Desenvolvimento de Sistemas apaixonado por criar 
-                    soluções web inovadoras. Transformando ideias em código.
-                </p>
-                <div class="hero-buttons">
-                    <a href="#projects" class="btn btn-primary">Ver Projetos</a>
-                    <a href="#contact" class="btn btn-secondary">Entre em Contato</a>
-                </div>
-                <div class="hero-social">
-                    <a href="https://github.com/felipeandrade08" target="_blank" aria-label="GitHub">
-                        <svg viewBox="0 0 24 24" width="24" height="24">
-                            <path fill="currentColor" d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                        </svg>
-                    </a>
-                    <a href="https://linkedin.com/in/felipe-andrade-0331b9205/" target="_blank" aria-label="LinkedIn">
-                        <svg viewBox="0 0 24 24" width="24" height="24">
-                            <path fill="currentColor" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
-                        </svg>
-                    </a>
-                    <a href="mailto:felipe.pessoall2026gmail.com" aria-label="Email">
-                        <svg viewBox="0 0 24 24" width="24" height="24">
-                            <path fill="currentColor" d="M0 3v18h24v-18h-24zm6.623 7.929l-4.623 5.712v-9.458l4.623 3.746zm-4.141-5.929h19.035l-9.517 7.713-9.518-7.713zm5.694 7.188l3.824 3.099 3.83-3.104 5.612 6.817h-18.779l5.513-6.812zm9.208-1.264l4.616-3.741v9.348l-4.616-5.607z"/>
-                        </svg>
-                    </a>
-                </div>
-            </div>
-            <div class="hero-image">
-                <div class="code-window">
-                    <div class="window-header">
-                        <div class="window-buttons">
-                            <span class="btn-red"></span>
-                            <span class="btn-yellow"></span>
-                            <span class="btn-green"></span>
-                        </div>
-                        <span class="window-title">portfolio.js</span>
-                    </div>
-                    <div class="window-body">
-                        <pre><code><span class="keyword">const</span> <span class="variable">developer</span> = {
-  <span class="property">name</span>: <span class="string">"Felipe Andrade"</span>,
-  <span class="property">role</span>: <span class="string">"Full Stack Developer"</span>,
-  <span class="property">location</span>: <span class="string">"Dobrada, SP"</span>,
-  <span class="property">education</span>: <span class="string">"ADS - Estácio"</span>,
-  
-  <span class="property">skills</span>: [
-    <span class="string">"JavaScript"</span>,
-    <span class="string">"Python"</span>,
-    <span class="string">"React"</span>,
-    <span class="string">"TypeScript"</span>,
-    <span class="string">"SQL"</span>
-  ],
-  
-  <span class="property">passions</span>: [
-    <span class="string">"Clean Code"</span>,
-    <span class="string">"Problem Solving"</span>,
-    <span class="string">"Learning"</span>
-  ],
-  
-  <span class="function">sayHi</span>() {
-    <span class="keyword">return</span> <span class="string">"Vamos criar algo incrível!"</span>;
-  }
-};
-
-<span class="comment">// Always coding... 💻</span></code></pre>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="scroll-indicator">
-            <span>Role para baixo</span>
-            <div class="mouse"></div>
-        </div>
+        <div class="floating-chip chip-top"><span>⌘</span> Código com propósito</div><div class="floating-chip chip-bottom"><span>✳</span> Sempre evoluindo</div>
+      </div>
+      <a class="scroll-cue" href="#sobre"><span></span> ROLE PARA EXPLORAR</a>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <h2 class="section-title">
-                <span class="title-number">01.</span>
-                Sobre Mim
-            </h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>
-                        Olá! Sou <strong>Felipe Andrade</strong>, estudante de Análise e Desenvolvimento 
-                        de Sistemas na Estácio e apaixonado por tecnologia desde que escrevi minha primeira 
-                        linha de código.
-                    </p>
-                    <p>
-                        Minha jornada começou com curiosidade sobre como as aplicações web funcionam, 
-                        e hoje estou transformando essa curiosidade em habilidades práticas. Trabalho 
-                        com desenvolvimento <strong>front-end e back-end</strong>, sempre buscando criar 
-                        soluções elegantes e eficientes.
-                    </p>
-                    <p>
-                        Recentemente concluí o curso <strong>FluêncIA - Fundamentos da Inteligência 
-                        Artificial</strong> no Senai São Paulo, onde explorei conceitos de machine learning 
-                        e suas aplicações práticas no desenvolvimento de software.
-                    </p>
-                    <p>
-                        Atualmente, estou focado em projetos que me desafiam a aprender e crescer, 
-                        sempre com atenção aos detalhes e às melhores práticas de desenvolvimento.
-                    </p>
-                    <div class="about-stats">
-                        <div class="stat-item">
-                            <span class="stat-number">15+</span>
-                            <span class="stat-label">Projetos</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-number">8</span>
-                            <span class="stat-label">Tecnologias</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-number">500+</span>
-                            <span class="stat-label">Commits</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="about-image">
-                    <div class="image-container">
-                        <!-- Adicione sua foto aqui -->
-                        <img src="foto.jpg" alt="Felipe Andrade">
-                        <div class="image-border"></div>
-                    </div>
-                </div>
-            </div>
+    <section class="section shell" id="sobre">
+      <div class="section-heading"><span class="section-index">01 / SOBRE</span><h2>Mais do que código.<br><span class="muted-heading">Soluções com propósito.</span></h2></div>
+      <div class="about-grid">
+        <div class="about-copy"><p class="lead">A tecnologia me permite transformar curiosidade em coisas que as pessoas realmente podem usar.</p><p>Sou estudante de Análise e Desenvolvimento de Sistemas na Estácio e venho desenvolvendo projetos próprios para transformar conhecimento em experiência prática. Tenho interesse tanto no front-end quanto no back-end, buscando entender o produto como um todo.</p><p>Também concluí o curso FluêncIA — Fundamentos da Inteligência Artificial, do Senai São Paulo. Valorizo aprendizado contínuo, organização e atenção aos detalhes em cada etapa do desenvolvimento.</p><a class="text-link" href="https://github.com/felipeandrade08" target="_blank" rel="noreferrer">Acompanhe minha evolução no GitHub <span>↗</span></a></div>
+        <div class="principles">
+          <article class="principle"><span class="principle-number">01</span><div><h3>Aprendizado contínuo</h3><p>Explorar tecnologias e evoluir a cada projeto.</p></div><span class="principle-icon">↗</span></article>
+          <article class="principle"><span class="principle-number">02</span><div><h3>Visão de produto</h3><p>Construir experiências úteis, claras e consistentes.</p></div><span class="principle-icon">◇</span></article>
+          <article class="principle"><span class="principle-number">03</span><div><h3>Resolução de problemas</h3><p>Entender desafios e transformar ideias em soluções.</p></div><span class="principle-icon">⌘</span></article>
         </div>
+      </div>
     </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="skills">
-        <div class="container">
-            <h2 class="section-title">
-                <span class="title-number">02.</span>
-                Tecnologias & Habilidades
-            </h2>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3>Front-end</h3>
-                    <div class="skill-items">
-                        <div class="skill-item">
-                            <span class="skill-name">HTML5</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="90"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">CSS3</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="85"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">JavaScript</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="80"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">React</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="75"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">TypeScript</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="70"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <section class="section section-bordered" id="stack"><div class="shell">
+      <div class="section-heading"><span class="section-index">02 / TECNOLOGIAS</span><h2>Ferramentas para<br><span class="muted-heading">tirar ideias do papel.</span></h2></div>
+      <div class="stack-grid">
+        <article class="stack-card"><span class="stack-icon">⌁</span><h3>Front-end</h3><p>Interfaces e experiências web.</p><div class="tag-list"><span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>React</span><span>TypeScript</span><span>Tailwind CSS</span></div></article>
+        <article class="stack-card"><span class="stack-icon">⌘</span><h3>Back-end & Dados</h3><p>Lógica, APIs e persistência.</p><div class="tag-list"><span>Node.js</span><span>Python</span><span>SQL</span><span>MySQL</span><span>PostgreSQL</span></div></article>
+        <article class="stack-card"><span class="stack-icon">⟁</span><h3>Ferramentas</h3><p>Fluxo de desenvolvimento.</p><div class="tag-list"><span>Git</span><span>GitHub</span><span>VS Code</span><span>Firebase</span><span>Vercel</span></div></article>
+      </div>
+      <p class="stack-note"><span>+</span> Tecnologias e ferramentas em constante aprendizado.</p>
+    </div></section>
 
-                <div class="skill-category">
-                    <h3>Back-end</h3>
-                    <div class="skill-items">
-                        <div class="skill-item">
-                            <span class="skill-name">Python</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="80"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">Node.js</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="70"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">SQL</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="75"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">MySQL</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="75"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">PostgreSQL</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="70"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="skill-category">
-                    <h3>Ferramentas</h3>
-                    <div class="tech-badges">
-                        <span class="tech-badge">Git</span>
-                        <span class="tech-badge">GitHub</span>
-                        <span class="tech-badge">VS Code</span>
-                        <span class="tech-badge">Bootstrap</span>
-                        <span class="tech-badge">Tailwind</span>
-                    </div>
-                </div>
-
-                <div class="skill-category">
-                    <h3>Soft Skills</h3>
-                    <div class="tech-badges">
-                        <span class="tech-badge">Resolução de Problemas</span>
-                        <span class="tech-badge">Trabalho em Equipe</span>
-                        <span class="tech-badge">Comunicação</span>
-                        <span class="tech-badge">Aprendizado Rápido</span>
-                        <span class="tech-badge">Adaptabilidade</span>
-                        <span class="tech-badge">Atenção aos Detalhes</span>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <section class="section shell" id="projetos">
+      <div class="projects-heading"><div class="section-heading"><span class="section-index">03 / PORTFÓLIO</span><h2>Projetos que mostram<br><span class="muted-heading">o que estou construindo.</span></h2></div><a class="text-link all-projects" href="https://github.com/felipeandrade08?tab=repositories" target="_blank" rel="noreferrer">Ver repositórios <span>↗</span></a></div>
+      <div class="projects-grid">
+        <article class="project-card"><a class="project-visual" href="https://github.com/felipeandrade08/Finan-as" target="_blank" rel="noreferrer"><img src="financas.png" alt="Prévia do FinControlPro" loading="lazy"><span class="project-open">↗</span><span class="project-number">01</span></a><div class="project-info"><div class="project-meta"><span>WEB APP</span><span>FINANÇAS</span></div><h3>FinControlPro</h3><p>Aplicação de gestão financeira com foco em organização, acompanhamento e visualização das finanças pessoais e de pequenos negócios.</p><div class="project-tags"><span>JavaScript</span><span>Web App</span><span>Gestão</span></div><a class="project-link" href="https://github.com/felipeandrade08/Finan-as" target="_blank" rel="noreferrer">Explorar projeto <span>↗</span></a></div></article>
+        <article class="project-card"><a class="project-visual" href="https://github.com/felipeandrade08/botdiscord" target="_blank" rel="noreferrer"><img src="botfarm.png" alt="Prévia do projeto Bot Discord" loading="lazy"><span class="project-open">↗</span><span class="project-number">02</span></a><div class="project-info"><div class="project-meta"><span>AUTOMAÇÃO</span><span>BOT</span></div><h3>Bot Discord</h3><p>Projeto de automação para comunidades, explorando integrações e recursos para tornar tarefas e interações mais práticas.</p><div class="project-tags"><span>JavaScript</span><span>Automação</span><span>Discord</span></div><a class="project-link" href="https://github.com/felipeandrade08/botdiscord" target="_blank" rel="noreferrer">Explorar projeto <span>↗</span></a></div></article>
+        <article class="project-card"><a class="project-visual" href="https://github.com/felipeandrade08" target="_blank" rel="noreferrer"><img src="barbearia.png" alt="Prévia do sistema de agendamento para barbearias" loading="lazy"><span class="project-open">↗</span><span class="project-number">03</span></a><div class="project-info"><div class="project-meta"><span>SISTEMA WEB</span><span>AGENDAMENTO</span></div><h3>Agendamento para Barbearias</h3><p>Experiência digital para apresentar serviços e facilitar o processo de agendamento de horários.</p><div class="project-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div><a class="project-link" href="https://github.com/felipeandrade08" target="_blank" rel="noreferrer">Ver no GitHub <span>↗</span></a></div></article>
+      </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <div class="container">
-            <h2 class="section-title">
-                <span class="title-number">03.</span>
-                Projetos em Destaque
-            </h2>
-            <div class="projects-grid">
-                <!-- FinControl Pro - Sistema de Gestão Financeira Pessoal -->
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="financas.png" alt="Projeto 1">
-                        <div class="project-overlay">
-                            <div class="project-links">
-                                <a href="#" class="https://github.com/felipeandrade08/Finan-as-" target="_blank">
-                                    <svg viewBox="0 0 24 24" width="20" height="20">
-                                        <path fill="currentColor" d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                                    </svg>
-                                </a>
-                                <a href="#" class="project-link" target="_blank">
-                                    <svg viewBox="0 0 24 24" width="20" height="20">
-                                        <path fill="currentColor" d="M14 12l-4-4v3H2v2h8v3m12-4a10 10 0 01-10 10 10 10 0 01-10-10A10 10 0 0112 2a10 10 0 0110 10z"/>
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">FinControl Pro - Sistema de Gestão Financeira Pessoal</h3>
-                        <p class="project-description">
-                            Sistema completo de controle financeiro pessoal desenvolvido como Progressive Web App (PWA), permitindo que usuários gerenciem suas finanças de forma inteligente e organizada. 
-                            O sistema oferece funcionalidades avançadas de rastreamento de receitas, despesas, orçamentos, metas financeiras, investimentos e contas mensais, 
-                            tudo integrado com Firebase para autenticação e armazenamento em nuvem.
-                        </p>
-                        <div class="project-tech">
-                            <span class="tech-tag">HTML5</span>
-                            <span class="tech-tag">CSS3</span>
-                            <span class="tech-tag">JavaScript (ES6+)</span>
-                            <span class="tech-tag">Firebase Auth</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 2 -->
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="botfarm.png" alt="Projeto 2">
-                        <div class="project-overlay">
-                            <div class="project-links">
-                                <a href="#" class="https://github.com/felipeandrade08/botdiscord" target="_blank">
-                                    <svg viewBox="0 0 24 24" width="20" height="20">
-                                        <path fill="currentColor" d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                                    </svg>
-                                </a>
-                                <a href="#" class="project-link" target="_blank">
-                                    <svg viewBox="0 0 24 24" width="20" height="20">
-                                        <path fill="currentColor" d="M14 12l-4-4v3H2v2h8v3m12-4a10 10 0 01-10 10 10 10 0 01-10-10A10 10 0 0112 2a10 10 0 0110 10z"/>
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Bot-Discord</h3>
-                        <p class="project-description">
-                            Sistema automatizado desenvolvido em Node.js para gerenciamento de registros de farms em servidores Discord. 
-                            O bot cria canais privados individuais para cada funcionário, permitindo registro ilimitado de farms com comprovação visual e sistema de pagamentos integrado.
-                        </p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Node.js</span>
-                            <span class="tech-tag">Discord.js v14</span>
-                            <span class="tech-tag">JavaScript ES6+</span>
-                            <span class="tech-tag">Discord Embed Builder</span>
-                            <span class="tech-tag">Discord Modals & Buttons</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 3 -->
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="barbearia.png" alt="Projeto 3">
-                        <div class="project-overlay">
-                            <div class="project-links">
-                                <a href="#" class="https://github.com/felipeandrade08/barbeariapro" target="_blank">
-                                    <svg viewBox="0 0 24 24" width="20" height="20">
-                                        <path fill="currentColor" d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                                    </svg>
-                                </a>
-                                <a href="#" class="project-link" target="_blank">
-                                    <svg viewBox="0 0 24 24" width="20" height="20">
-                                        <path fill="currentColor" d="M14 12l-4-4v3H2v2h8v3m12-4a10 10 0 01-10 10 10 10 0 01-10-10A10 10 0 0112 2a10 10 0 0110 10z"/>
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Sistemas de Agendamentos Barbearias</h3>
-                        <p class="project-description">
-                            Sistema web moderno e responsivo para gerenciamento de agendamentos de barbearias. 
-                            Desenvolvido com HTML, CSS e JavaScript puro, utilizando localStorage para persistência de dados, dispensando a necessidade de backend.
-                        </p>
-                        <div class="project-tech">
-                            <span class="tech-tag">HTML5</span>
-                            <span class="tech-tag">CSS3</span>
-                            <span class="tech-tag">JavaScript</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="more-projects">
-                <a href="https://github.com/felipeandrade08" target="_blank" class="btn btn-outline">
-                    Ver Mais no GitHub
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section-title">
-                <span class="title-number">04.</span>
-                Entre em Contato
-            </h2>
-            <div class="contact-content">
-                <div class="contact-text">
-                    <h3>Vamos trabalhar juntos?</h3>
-                    <p>
-                        Estou sempre aberto a novas oportunidades, projetos interessantes e 
-                        conversas sobre tecnologia. Se você tem uma ideia, uma vaga ou apenas 
-                        quer bater um papo, ficarei feliz em conversar!
-                    </p>
-                    <div class="contact-info">
-                        <div class="info-item">
-                            <svg viewBox="0 0 24 24" width="24" height="24">
-                                <path fill="currentColor" d="M0 3v18h24v-18h-24zm6.623 7.929l-4.623 5.712v-9.458l4.623 3.746zm-4.141-5.929h19.035l-9.517 7.713-9.518-7.713zm5.694 7.188l3.824 3.099 3.83-3.104 5.612 6.817h-18.779l5.513-6.812zm9.208-1.264l4.616-3.741v9.348l-4.616-5.607z"/>
-                            </svg>
-                            <span>felipe.pessoall2026@gmail.com</span>
-                        </div>
-                        <div class="info-item">
-                            <svg viewBox="0 0 24 24" width="24" height="24">
-                                <path fill="currentColor" d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
-                            </svg>
-                            <span>Dobrada, São Paulo - Brasil</span>
-                        </div>
-                    </div>
-                </div>
-                <form class="contact-form" id="contactForm">
-                    <div class="form-group">
-                        <input type="text" name="name" placeholder="Seu Nome" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="email" name="email" placeholder="Seu Email" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="text" name="subject" placeholder="Assunto" required>
-                    </div>
-                    <div class="form-group">
-                        <textarea name="message" rows="5" placeholder="Sua Mensagem" required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
-                </form>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2026 Felipe Andrade. Feito com ❤️ e muito ☕</p>
-            <div class="footer-links">
-                <a href="https://github.com/felipeandrade08" target="_blank">GitHub</a>
-                <a href="https://linkedin.com/in/felipe-andrade-0331b9205/" target="_blank">LinkedIn</a>
-                <a href="mailto:felipe.pessoal2026@gmail.com">Email</a>
-            </div>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
-    <script type="text/javascript"
-  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-</script>
-
+    <section class="contact-section" id="contato"><div class="shell contact-inner"><div><span class="section-index">04 / CONTATO</span><h2>Tem uma ideia?<br><span class="gradient-text">Vamos construir juntos.</span></h2><p>Estou aberto a oportunidades, projetos e boas conversas sobre tecnologia.</p></div><div class="contact-actions"><a class="button button-primary" href="mailto:felipe.pessoall2026@gmail.com">Enviar um e-mail <span>↗</span></a><a class="contact-social" href="https://linkedin.com/in/felipe-andrade-0331b9205/" target="_blank" rel="noreferrer">Conectar no LinkedIn ↗</a><a class="contact-social" href="https://github.com/felipeandrade08" target="_blank" rel="noreferrer">Acessar GitHub ↗</a></div></div></section>
+  </main>
+  <footer class="footer shell"><a class="brand" href="#inicio"><span class="brand-mark">F<span>.</span>A</span></a><p>Projetado e desenvolvido por <strong>Felipe Andrade</strong>.</p><span class="footer-year">© <span id="year">2026</span> · FEITO COM PROPÓSITO</span></footer>
+  <script src="script.js"></script>
 </body>
 </html>
