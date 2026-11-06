@@ -16,3 +16,10 @@
 .showcase-featured .project-screenshot,.showcase-wide .project-screenshot{max-height:none}
 .preview-caption{margin-top:10px;letter-spacing:1.4px;font-size:7px;color:#718ba8}
 @media(max-width:680px){.showcase-preview{padding:14px}.showcase-preview .project-screenshot{aspect-ratio:16/10}}
+
+
+/* Capturas PNG originais em alta resolução */
+.showcase-preview{display:flex;align-items:center;justify-content:center;overflow:hidden;padding:16px}
+.showcase-preview .project-screenshot{display:block;width:100%;height:100%;max-width:100%;max-height:100%;object-fit:contain;object-position:center;border:1px solid rgba(140,177,218,.18);border-radius:8px;box-shadow:0 14px 36px rgba(0,0,0,.24);image-rendering:auto}
+.showcase-preview{min-height:260px;aspect-ratio:16/9}
+@media(max-width:680px){.showcase-preview{min-height:190px;padding:10px}}
